@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Dicoding Event</string>
+
+    <!-- Menu Title -->
+    <string name="home_menu">Beranda</string>
+    <string name="event_active_menu">Event Aktif</string>
+    <string name="event_done_menu">Event Selesai</string>
+    <string name="search_menu">Cari Event</string>
+    <string name="content_description_image">Event Image</string>
+
+    <string name="search_bar_hint">Cari event favoritmu disini</string>
+    <string name="upcoming_event">Event yang akan datang</string>
+    <string name="finished_event">Event yang sudah selesai</string>
+    <string name="recomendation_event">Rekomendasi Event untuk Kamu!</string>
+    <string name="event_not_found">Event tidak ditemukan"</string>
+    <string name="registration">Daftar Sekarang</string>
+
+    <string name="loading_text">Memuat Event</string>
+    <string name="event_title">Example Event</string>
+    <string name="event_category">Workshop</string>
+    <string name="event_owner">Oleh: %1$s</string>
+    <string name="event_summary">Example Event Summary</string>
+    <string name="event_description">Example Event Description</string>
+    <string name="event_date">Example Date</string>
+    <string name="event_quota">Sisa Kuota: %1$s</string>
+
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.alif.dicodingevent.ui.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.alif.dicodingevent.ui.fragment.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_navigation_search_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_active_event"
+        android:name="com.alif.dicodingevent.ui.fragment.ActiveEventFragment"
+        android:label="fragment_active_event"
+        tools:layout="@layout/fragment_active_event" >
+        <action
+            android:id="@+id/action_navigation_active_event_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_finished_event"
+        android:name="com.alif.dicodingevent.ui.fragment.FinishedEventFragment"
+        android:label="fragment_finished_event"
+        tools:layout="@layout/fragment_finished_event" >
+        <action
+            android:id="@+id/action_navigation_finished_event_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.alif.dicodingevent.ui.fragment.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+
+        <argument
+            android:name="idEvent"
+            app:argType="integer"
+            android:defaultValue="0"/>
+
+    </fragment>
+
+</navigation>
