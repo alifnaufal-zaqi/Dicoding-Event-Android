@@ -11,7 +11,8 @@ import androidx.recyclerview.widget.GridLayoutManager
 import com.alif.dicodingevent.adapter.EventAdapter
 import com.alif.dicodingevent.databinding.FragmentSearchBinding
 import com.alif.dicodingevent.ui.activity.MainActivity
-import com.alif.dicodingevent.view_model.EventViewModel
+import com.alif.dicodingevent.ui.view_model.EventViewModel
+import com.alif.dicodingevent.ui.view_model.ViewModelFactory
 import com.google.android.material.search.SearchView
 import com.google.android.material.snackbar.Snackbar
 
@@ -20,7 +21,9 @@ class SearchFragment : Fragment() {
     private var _binding: FragmentSearchBinding? = null
     private val binding get() = _binding!!
     private val eventAdapter = EventAdapter()
-    private val eventViewModel: EventViewModel by viewModels()
+    private val eventViewModel: EventViewModel by viewModels {
+        ViewModelFactory.getInstance(requireActivity())
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

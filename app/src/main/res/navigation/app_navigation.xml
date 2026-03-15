@@ -58,4 +58,14 @@
 
     </fragment>
 
+    <fragment
+        android:id="@+id/navigation_favorite_event"
+        android:name="com.alif.dicodingevent.ui.fragment.FavoriteEventFragment"
+        android:label="fragment_favorite_event"
+        tools:layout="@layout/fragment_favorite_event" >
+        <action
+            android:id="@+id/action_favoriteEventFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+
 </navigation>

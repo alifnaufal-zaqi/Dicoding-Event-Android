@@ -7,6 +7,7 @@
     <string name="event_done_menu">Event Selesai</string>
     <string name="search_menu">Cari Event</string>
     <string name="content_description_image">Event Image</string>
+    <string name="favorite_menu">Favorit</string>
 
     <string name="search_bar_hint">Cari event favoritmu disini</string>
     <string name="upcoming_event">Event yang akan datang</string>
@@ -23,5 +24,8 @@
     <string name="event_description">Example Event Description</string>
     <string name="event_date">Example Date</string>
     <string name="event_quota">Sisa Kuota: %1$s</string>
+    <string name="favorite_event">Event yang kamu sukai</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

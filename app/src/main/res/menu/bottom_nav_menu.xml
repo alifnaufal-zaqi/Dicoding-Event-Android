@@ -21,4 +21,9 @@
         android:title="@string/event_done_menu"
         android:icon="@drawable/ic_event_busy"/>
 
+    <item
+        android:id="@+id/navigation_favorite_event"
+        android:title="@string/favorite_menu"
+        android:icon="@drawable/ic_bookmark"/>
+
 </menu>

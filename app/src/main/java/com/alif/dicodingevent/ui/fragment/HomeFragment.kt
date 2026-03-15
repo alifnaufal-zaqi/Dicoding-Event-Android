@@ -12,14 +12,17 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.alif.dicodingevent.adapter.EventAdapter
 import com.alif.dicodingevent.databinding.FragmentHomeBinding
 import com.alif.dicodingevent.utils.EventType
-import com.alif.dicodingevent.view_model.EventViewModel
+import com.alif.dicodingevent.ui.view_model.EventViewModel
+import com.alif.dicodingevent.ui.view_model.ViewModelFactory
 import com.google.android.material.snackbar.Snackbar
 
 class HomeFragment : Fragment() {
 
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
-    private val eventViewModel: EventViewModel by viewModels()
+    private val eventViewModel: EventViewModel by viewModels {
+        ViewModelFactory.getInstance(requireActivity())
+    }
     private val activeEventAdapter = EventAdapter()
     private val finishedEventAdapter = EventAdapter()
 
@@ -64,6 +67,7 @@ class HomeFragment : Fragment() {
         val toDetailFragment = HomeFragmentDirections.actionNavigationHomeToDetailFragment(idEvent)
         findNavController().navigate(toDetailFragment)
     }
+
 
     private fun observeViewModel() {
         eventViewModel.apply {

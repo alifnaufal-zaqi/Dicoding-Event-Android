@@ -1,4 +1,4 @@
-package com.alif.dicodingevent.data.response
+package com.alif.dicodingevent.data.remote.response
 
 import com.google.gson.annotations.SerializedName
 

@@ -9,16 +9,20 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import com.alif.dicodingevent.adapter.EventAdapter
+import com.alif.dicodingevent.data.Result
 import com.alif.dicodingevent.databinding.FragmentActiveEventBinding
 import com.alif.dicodingevent.utils.EventType
-import com.alif.dicodingevent.view_model.EventViewModel
+import com.alif.dicodingevent.ui.view_model.EventViewModel
+import com.alif.dicodingevent.ui.view_model.ViewModelFactory
 import com.google.android.material.snackbar.Snackbar
 
 class ActiveEventFragment : Fragment() {
 
     private var _binding: FragmentActiveEventBinding? = null
     private val binding get() = _binding!!
-    private val eventViewModel: EventViewModel by viewModels()
+    private val eventViewModel: EventViewModel by viewModels {
+        ViewModelFactory.getInstance(requireActivity())
+    }
     private val eventAdapter = EventAdapter()
 
     override fun onCreateView(
