@@ -12,18 +12,6 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="8dp"
-            android:text="@string/app_name"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:textSize="32sp"
-            android:textStyle="bold" />
-
-        <TextView
             android:id="@+id/tv_favorite_event"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -31,7 +19,7 @@
             android:text="@string/favorite_event"
             android:textSize="16sp"
             android:layout_marginTop="6dp"
-            app:layout_constraintTop_toBottomOf="@+id/title"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
 
@@ -50,6 +38,16 @@
         <include
             android:id="@+id/loading_view"
             layout="@layout/loading_layout"/>
+
+        <TextView
+            android:id="@+id/tv_empty_favorite_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/empty_favorite_item"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

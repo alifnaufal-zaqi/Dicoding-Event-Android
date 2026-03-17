@@ -63,6 +63,13 @@ class FavoriteEventFragment : Fragment() {
             }
 
             favoriteEvents.observe(viewLifecycleOwner) { events ->
+
+                if (events.isEmpty()) {
+                    binding.tvEmptyFavoriteEvent.visibility = View.VISIBLE
+                } else {
+                    binding.tvEmptyFavoriteEvent.visibility = View.GONE
+                }
+
                 val mappedEvents = events.map {
                     ListEventsItem(it.summary, it.mediaCover, it.registrants, it.imageLogo, it.link, it.description, it.ownerName, it.cityName, it.quota, it.name, it.id, it.beginTime, it.endTime, it.category)
                 }

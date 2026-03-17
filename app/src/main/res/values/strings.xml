@@ -17,6 +17,7 @@
     <string name="event_not_found">Event tidak ditemukan"</string>
     <string name="registration">Daftar Sekarang</string>
     <string name="favorite_description">Icon favorite</string>
+    <string name="empty_favorite_item">Belum ada event yang kamu sukai</string>
 
     <!-- Preferences Resources -->
     <string name="theme_title">Dark Mode</string>
