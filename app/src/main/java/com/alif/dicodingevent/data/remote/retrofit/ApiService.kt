@@ -1,13 +1,12 @@
 package com.alif.dicodingevent.data.remote.retrofit
 import com.alif.dicodingevent.data.remote.response.DetailEventResponse
 import com.alif.dicodingevent.data.remote.response.EventResponse
-import retrofit2.Call
 import retrofit2.http.*
 
 interface ApiService {
     // Get list of events
     @GET("events")
-    suspend fun getEvents(@Query("active") active: Int): EventResponse
+    suspend fun getEvents(@Query("active") active: Int, @Query("limit") limit: Int = 40): EventResponse
 
     // Get Event by ID
     @GET("events/{id}")

@@ -1,4 +1,4 @@
-package com.alif.dicodingevent.adapter
+package com.alif.dicodingevent.ui.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

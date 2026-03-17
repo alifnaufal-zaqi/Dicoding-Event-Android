@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace = "com.alif.dicodingevent"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.alif.dicodingevent"
@@ -64,5 +64,8 @@ dependencies {
     implementation(libs.logging.interceptor)
     implementation(libs.androidx.room.runtime)
     implementation(libs.androidx.room.ktx)
+    implementation(libs.androidx.datastore.preferences)
+    implementation(libs.androidx.preference.ktx)
+    implementation(libs.androidx.work.runtime.ktx)
     ksp(libs.androidx.room.compiler)
 }

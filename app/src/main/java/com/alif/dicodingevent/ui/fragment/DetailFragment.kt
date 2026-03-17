@@ -10,6 +10,7 @@ import android.widget.Toast
 import androidx.core.text.HtmlCompat
 import androidx.core.net.toUri
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import com.alif.dicodingevent.R
 import com.alif.dicodingevent.data.Result
 import com.alif.dicodingevent.data.local.entity.FavoriteEventEntity
@@ -46,6 +47,8 @@ class DetailFragment : Fragment() {
 
             event.observe(viewLifecycleOwner) { event ->
                 setEventData(event!!)
+
+                findNavController().graph.findNode(R.id.detailFragment)?.label = event.name
             }
 
             isLoading.observe(viewLifecycleOwner) { isLoading ->
@@ -80,7 +83,7 @@ class DetailFragment : Fragment() {
     }
 
     private fun setEventData(event: ListEventsItem) {
-        var isFavorite: Boolean = false
+        var isFavorite = false
 
         binding.apply {
             Glide.with(requireActivity())

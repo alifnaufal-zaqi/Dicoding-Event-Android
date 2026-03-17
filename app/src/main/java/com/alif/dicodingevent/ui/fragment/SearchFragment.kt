@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
-import com.alif.dicodingevent.adapter.EventAdapter
+import com.alif.dicodingevent.ui.adapter.EventAdapter
 import com.alif.dicodingevent.databinding.FragmentSearchBinding
 import com.alif.dicodingevent.ui.activity.MainActivity
 import com.alif.dicodingevent.ui.view_model.EventViewModel

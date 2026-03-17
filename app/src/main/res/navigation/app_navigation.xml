@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/navigation_home"
         android:name="com.alif.dicodingevent.ui.fragment.HomeFragment"
-        android:label="fragment_home"
+        android:label="Home"
         tools:layout="@layout/fragment_home" >
         <action
             android:id="@+id/action_navigation_home_to_detailFragment"
@@ -18,7 +18,7 @@
     <fragment
         android:id="@+id/navigation_search"
         android:name="com.alif.dicodingevent.ui.fragment.SearchFragment"
-        android:label="fragment_search"
+        android:label="Search"
         tools:layout="@layout/fragment_search" >
         <action
             android:id="@+id/action_navigation_search_to_detailFragment"
@@ -28,7 +28,7 @@
     <fragment
         android:id="@+id/navigation_active_event"
         android:name="com.alif.dicodingevent.ui.fragment.ActiveEventFragment"
-        android:label="fragment_active_event"
+        android:label="Active Event"
         tools:layout="@layout/fragment_active_event" >
         <action
             android:id="@+id/action_navigation_active_event_to_detailFragment"
@@ -38,7 +38,7 @@
     <fragment
         android:id="@+id/navigation_finished_event"
         android:name="com.alif.dicodingevent.ui.fragment.FinishedEventFragment"
-        android:label="fragment_finished_event"
+        android:label="Finished Event"
         tools:layout="@layout/fragment_finished_event" >
         <action
             android:id="@+id/action_navigation_finished_event_to_detailFragment"
@@ -48,7 +48,7 @@
     <fragment
         android:id="@+id/detailFragment"
         android:name="com.alif.dicodingevent.ui.fragment.DetailFragment"
-        android:label="fragment_detail"
+        android:label="Detail Event"
         tools:layout="@layout/fragment_detail" >
 
         <argument
@@ -61,11 +61,17 @@
     <fragment
         android:id="@+id/navigation_favorite_event"
         android:name="com.alif.dicodingevent.ui.fragment.FavoriteEventFragment"
-        android:label="fragment_favorite_event"
+        android:label="Favorite Event"
         tools:layout="@layout/fragment_favorite_event" >
         <action
             android:id="@+id/action_favoriteEventFragment_to_detailFragment"
             app:destination="@id/detailFragment" />
     </fragment>
+
+    <fragment
+        android:id="@+id/navigation_setting"
+        android:name="com.alif.dicodingevent.ui.fragment.SettingFragment"
+        android:label="Setting"
+        tools:layout="@layout/fragment_setting"/>
 
 </navigation>

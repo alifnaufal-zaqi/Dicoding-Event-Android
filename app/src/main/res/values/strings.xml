@@ -7,7 +7,8 @@
     <string name="event_done_menu">Event Selesai</string>
     <string name="search_menu">Cari Event</string>
     <string name="content_description_image">Event Image</string>
-    <string name="favorite_menu">Favorit</string>
+    <string name="favorite_menu">Event Favorit</string>
+    <string name="setting_menu">Pengaturan</string>
 
     <string name="search_bar_hint">Cari event favoritmu disini</string>
     <string name="upcoming_event">Event yang akan datang</string>
@@ -15,6 +16,15 @@
     <string name="recomendation_event">Rekomendasi Event untuk Kamu!</string>
     <string name="event_not_found">Event tidak ditemukan"</string>
     <string name="registration">Daftar Sekarang</string>
+    <string name="favorite_description">Icon favorite</string>
+
+    <!-- Preferences Resources -->
+    <string name="theme_title">Dark Mode</string>
+    <string name="theme_summary">Enable Dark Mode</string>
+    <string name="theme_key">theme</string>
+    <string name="reminder_title">Daily Reminder</string>
+    <string name="reminder_summary">Enable Notifications</string>
+    <string name="reminder_key">notification</string>
 
     <string name="loading_text">Memuat Event</string>
     <string name="event_title">Example Event</string>
@@ -25,7 +35,4 @@
     <string name="event_date">Example Date</string>
     <string name="event_quota">Sisa Kuota: %1$s</string>
     <string name="favorite_event">Event yang kamu sukai</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-
 </resources>

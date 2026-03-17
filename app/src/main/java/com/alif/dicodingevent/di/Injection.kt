@@ -2,6 +2,8 @@ package com.alif.dicodingevent.di
 
 import android.content.Context
 import com.alif.dicodingevent.data.EventRepository
+import com.alif.dicodingevent.data.SettingRepository
+import com.alif.dicodingevent.data.local.datastore.dataStore
 import com.alif.dicodingevent.data.local.room.EventDatabase
 import com.alif.dicodingevent.data.remote.retrofit.ApiConfig
 
@@ -12,5 +14,9 @@ object Injection {
         val dao = database.favoriteEventDao()
 
         return EventRepository.getInstance(apiService, dao)
+    }
+
+    fun provideSettingRepository(context: Context): SettingRepository {
+        return SettingRepository.getInstance(context.dataStore)
     }
 }
